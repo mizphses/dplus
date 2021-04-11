@@ -1,0 +1,22 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+@import './custom';
+@import '~bulma/bulma';
+@import '~bulma-o-steps/bulma-steps';
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #3273dc;
+  margin-top: -0.375em;
+  right: 1.125em;
+}
+@media (max-width: 767px) {
+  .navbar-link:not(.is-arrowless)::after {
+    border-color: #ffffff00;
+    margin-top: -0.375em;
+    right: 1.125em;
+  }
+}
+
+.serif{
+  font-family: 'IBM Plex Serif', 'Shippori Mincho B1', 'Times New Roman', 'ヒラギノ明朝ProN', serif;
+}

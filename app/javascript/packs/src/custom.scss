@@ -1,0 +1,15 @@
+$family-sans-serif: 'Open Sans', 'Noto Sans JP', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// 中大レッド
+$chudaired: #CF0100;
+$chudaired-invert: findColorInvert($chudaired);
+//中大ブルー
+$chudaiblue: #223B80;
+$chudaiblue-invert: findColorInvert($chudaiblue);
+
+@import '~bulma/sass/utilities/derived-variables';
+$addColors: (
+  "chudaired":($chudaired, $chudaired-invert),
+  "chudaiblue":($chudaiblue, $chudaiblue-invert)
+);
+$colors: map-merge($colors, $addColors);
