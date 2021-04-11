@@ -6,7 +6,6 @@
 
 # Ignore bundler config.
 /.bundle
-vendor/bundle
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -35,3 +34,22 @@ vendor/bundle
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+
+# Ignore bundler gems.
+vendor/bundle
+
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+docs

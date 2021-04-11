@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Syllabuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Term</th>
+      <th>Day</th>
+      <th>Time</th>
+      <th>Faculty</th>
+      <th>Teacher</th>
+      <th>Grade</th>
+      <th>Degree</th>
+      <th>Condition</th>
+      <th>Lang</th>
+      <th>Overview</th>
+      <th>Purpose</th>
+      <th>Goal</th>
+      <th>Contents</th>
+      <th>Outofclass content</th>
+      <th>Outofclass tile</th>
+      <th>Evaluation</th>
+      <th>Evaluation note</th>
+      <th>Feedback</th>
+      <th>Feedback note</th>
+      <th>Activelearning content</th>
+      <th>Activelearning howto</th>
+      <th>Experience</th>
+      <th>Experience contents</th>
+      <th>Experience reduction</th>
+      <th>Textbook</th>
+      <th>Note</th>
+      <th>Url</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @syllabuses.each do |syllabus| %>
+      <tr>
+        <td><%= syllabus.title %></td>
+        <td><%= syllabus.year %></td>
+        <td><%= syllabus.term %></td>
+        <td><%= syllabus.day %></td>
+        <td><%= syllabus.time %></td>
+        <td><%= syllabus.faculty %></td>
+        <td><%= syllabus.teacher %></td>
+        <td><%= syllabus.grade %></td>
+        <td><%= syllabus.degree %></td>
+        <td><%= syllabus.condition %></td>
+        <td><%= syllabus.lang %></td>
+        <td><%= syllabus.overview %></td>
+        <td><%= syllabus.purpose %></td>
+        <td><%= syllabus.goal %></td>
+        <td><%= syllabus.contents %></td>
+        <td><%= syllabus.outofclass_content %></td>
+        <td><%= syllabus.outofclass_tile %></td>
+        <td><%= syllabus.evaluation %></td>
+        <td><%= syllabus.evaluation_note %></td>
+        <td><%= syllabus.feedback %></td>
+        <td><%= syllabus.feedback_note %></td>
+        <td><%= syllabus.activelearning_content %></td>
+        <td><%= syllabus.activelearning_howto %></td>
+        <td><%= syllabus.experience %></td>
+        <td><%= syllabus.experience_contents %></td>
+        <td><%= syllabus.experience_reduction %></td>
+        <td><%= syllabus.textbook %></td>
+        <td><%= syllabus.note %></td>
+        <td><%= syllabus.url %></td>
+        <td><%= syllabus.comment %></td>
+        <td><%= link_to 'Show', syllabus %></td>
+        <td><%= link_to 'Edit', edit_syllabus_path(syllabus) %></td>
+        <td><%= link_to 'Destroy', syllabus, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Syllabus', new_syllabus_path %>

@@ -1,0 +1,167 @@
+<%= form_with(model: syllabus) do |form| %>
+  <% if syllabus.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(syllabus.errors.count, "error") %> prohibited this syllabus from being saved:</h2>
+
+      <ul>
+        <% syllabus.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :term %>
+    <%= form.number_field :term %>
+  </div>
+
+  <div class="field">
+    <%= form.label :day %>
+    <%= form.text_field :day %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.number_field :time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :faculty %>
+    <%= form.text_field :faculty %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher %>
+    <%= form.text_field :teacher %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade %>
+    <%= form.number_field :grade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :degree %>
+    <%= form.number_field :degree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :condition %>
+    <%= form.text_field :condition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lang %>
+    <%= form.text_field :lang %>
+  </div>
+
+  <div class="field">
+    <%= form.label :overview %>
+    <%= form.text_field :overview %>
+  </div>
+
+  <div class="field">
+    <%= form.label :purpose %>
+    <%= form.text_field :purpose %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goal %>
+    <%= form.text_field :goal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contents %>
+    <%= form.text_field :contents %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outofclass_content %>
+    <%= form.text_field :outofclass_content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outofclass_tile %>
+    <%= form.text_field :outofclass_tile %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evaluation %>
+    <%= form.text_field :evaluation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evaluation_note %>
+    <%= form.text_field :evaluation_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :feedback %>
+    <%= form.text_field :feedback %>
+  </div>
+
+  <div class="field">
+    <%= form.label :feedback_note %>
+    <%= form.text_field :feedback_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activelearning_content %>
+    <%= form.text_field :activelearning_content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activelearning_howto %>
+    <%= form.text_field :activelearning_howto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :experience %>
+    <%= form.check_box :experience %>
+  </div>
+
+  <div class="field">
+    <%= form.label :experience_contents %>
+    <%= form.text_field :experience_contents %>
+  </div>
+
+  <div class="field">
+    <%= form.label :experience_reduction %>
+    <%= form.text_field :experience_reduction %>
+  </div>
+
+  <div class="field">
+    <%= form.label :textbook %>
+    <%= form.text_field :textbook %>
+  </div>
+
+  <div class="field">
+    <%= form.label :note %>
+    <%= form.text_field :note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_field :comment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

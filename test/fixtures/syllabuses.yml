@@ -1,0 +1,65 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  year: 1
+  term: 1
+  day: MyString
+  time: 1
+  faculty: MyString
+  teacher: MyString
+  grade: 1
+  degree: 1
+  condition: MyString
+  lang: MyString
+  overview: MyString
+  purpose: MyString
+  goal: MyString
+  contents: MyString
+  outofclass_content: MyString
+  outofclass_tile: MyString
+  evaluation: MyString
+  evaluation_note: MyString
+  feedback: MyString
+  feedback_note: MyString
+  activelearning_content: MyString
+  activelearning_howto: MyString
+  experience: false
+  experience_contents: MyString
+  experience_reduction: MyString
+  textbook: MyString
+  note: MyString
+  url: MyString
+  comment: MyString
+
+two:
+  title: MyString
+  year: 1
+  term: 1
+  day: MyString
+  time: 1
+  faculty: MyString
+  teacher: MyString
+  grade: 1
+  degree: 1
+  condition: MyString
+  lang: MyString
+  overview: MyString
+  purpose: MyString
+  goal: MyString
+  contents: MyString
+  outofclass_content: MyString
+  outofclass_tile: MyString
+  evaluation: MyString
+  evaluation_note: MyString
+  feedback: MyString
+  feedback_note: MyString
+  activelearning_content: MyString
+  activelearning_howto: MyString
+  experience: false
+  experience_contents: MyString
+  experience_reduction: MyString
+  textbook: MyString
+  note: MyString
+  url: MyString
+  comment: MyString
