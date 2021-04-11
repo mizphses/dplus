@@ -2,13 +2,12 @@
 
 one:
   title: MyString
-  year: 1
+  grade: 1
   term: 1
   day: MyString
-  time: 1
   faculty: MyString
   teacher: MyString
-  grade: 1
+  year: 1
   degree: 1
   condition: MyString
   lang: MyString
@@ -17,7 +16,7 @@ one:
   goal: MyString
   contents: MyString
   outofclass_content: MyString
-  outofclass_tile: MyString
+  outofclass_time: MyString
   evaluation: MyString
   evaluation_note: MyString
   feedback: MyString
@@ -34,13 +33,12 @@ one:
 
 two:
   title: MyString
-  year: 1
+  grade: 1
   term: 1
   day: MyString
-  time: 1
   faculty: MyString
   teacher: MyString
-  grade: 1
+  year: 1
   degree: 1
   condition: MyString
   lang: MyString
@@ -49,7 +47,7 @@ two:
   goal: MyString
   contents: MyString
   outofclass_content: MyString
-  outofclass_tile: MyString
+  outofclass_time: MyString
   evaluation: MyString
   evaluation_note: MyString
   feedback: MyString

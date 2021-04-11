@@ -6,13 +6,12 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Year</th>
+      <th>Grade</th>
       <th>Term</th>
       <th>Day</th>
-      <th>Time</th>
       <th>Faculty</th>
       <th>Teacher</th>
-      <th>Grade</th>
+      <th>Year</th>
       <th>Degree</th>
       <th>Condition</th>
       <th>Lang</th>
@@ -21,7 +20,7 @@
       <th>Goal</th>
       <th>Contents</th>
       <th>Outofclass content</th>
-      <th>Outofclass tile</th>
+      <th>Outofclass time</th>
       <th>Evaluation</th>
       <th>Evaluation note</th>
       <th>Feedback</th>
@@ -43,13 +42,12 @@
     <% @syllabuses.each do |syllabus| %>
       <tr>
         <td><%= syllabus.title %></td>
-        <td><%= syllabus.year %></td>
+        <td><%= syllabus.grade %></td>
         <td><%= syllabus.term %></td>
         <td><%= syllabus.day %></td>
-        <td><%= syllabus.time %></td>
         <td><%= syllabus.faculty %></td>
         <td><%= syllabus.teacher %></td>
-        <td><%= syllabus.grade %></td>
+        <td><%= syllabus.year %></td>
         <td><%= syllabus.degree %></td>
         <td><%= syllabus.condition %></td>
         <td><%= syllabus.lang %></td>
@@ -58,7 +56,7 @@
         <td><%= syllabus.goal %></td>
         <td><%= syllabus.contents %></td>
         <td><%= syllabus.outofclass_content %></td>
-        <td><%= syllabus.outofclass_tile %></td>
+        <td><%= syllabus.outofclass_time %></td>
         <td><%= syllabus.evaluation %></td>
         <td><%= syllabus.evaluation_note %></td>
         <td><%= syllabus.feedback %></td>

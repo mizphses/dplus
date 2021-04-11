@@ -2,13 +2,12 @@ class CreateSyllabuses < ActiveRecord::Migration[6.1]
   def change
     create_table :syllabuses do |t|
       t.string :title
-      t.integer :year
+      t.integer :grade
       t.integer :term
       t.string :day
-      t.integer :time
       t.string :faculty
       t.string :teacher
-      t.integer :grade
+      t.integer :year
       t.integer :degree
       t.string :condition
       t.string :lang
@@ -17,7 +16,7 @@ class CreateSyllabuses < ActiveRecord::Migration[6.1]
       t.string :goal
       t.string :contents
       t.string :outofclass_content
-      t.string :outofclass_tile
+      t.string :outofclass_time
       t.string :evaluation
       t.string :evaluation_note
       t.string :feedback

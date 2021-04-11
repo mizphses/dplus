@@ -34,13 +34,12 @@ class SyllabusesTest < ApplicationSystemTestCase
     fill_in "Lang", with: @syllabus.lang
     fill_in "Note", with: @syllabus.note
     fill_in "Outofclass content", with: @syllabus.outofclass_content
-    fill_in "Outofclass tile", with: @syllabus.outofclass_tile
+    fill_in "Outofclass time", with: @syllabus.outofclass_time
     fill_in "Overview", with: @syllabus.overview
     fill_in "Purpose", with: @syllabus.purpose
     fill_in "Teacher", with: @syllabus.teacher
     fill_in "Term", with: @syllabus.term
     fill_in "Textbook", with: @syllabus.textbook
-    fill_in "Time", with: @syllabus.time
     fill_in "Title", with: @syllabus.title
     fill_in "Url", with: @syllabus.url
     fill_in "Year", with: @syllabus.year
@@ -74,13 +73,12 @@ class SyllabusesTest < ApplicationSystemTestCase
     fill_in "Lang", with: @syllabus.lang
     fill_in "Note", with: @syllabus.note
     fill_in "Outofclass content", with: @syllabus.outofclass_content
-    fill_in "Outofclass tile", with: @syllabus.outofclass_tile
+    fill_in "Outofclass time", with: @syllabus.outofclass_time
     fill_in "Overview", with: @syllabus.overview
     fill_in "Purpose", with: @syllabus.purpose
     fill_in "Teacher", with: @syllabus.teacher
     fill_in "Term", with: @syllabus.term
     fill_in "Textbook", with: @syllabus.textbook
-    fill_in "Time", with: @syllabus.time
     fill_in "Title", with: @syllabus.title
     fill_in "Url", with: @syllabus.url
     fill_in "Year", with: @syllabus.year

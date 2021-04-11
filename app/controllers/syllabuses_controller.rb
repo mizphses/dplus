@@ -64,6 +64,6 @@ class SyllabusesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def syllabus_params
-      params.require(:syllabus).permit(:title, :year, :term, :day, :time, :faculty, :teacher, :grade, :degree, :condition, :lang, :overview, :purpose, :goal, :contents, :outofclass_content, :outofclass_tile, :evaluation, :evaluation_note, :feedback, :feedback_note, :activelearning_content, :activelearning_howto, :experience, :experience_contents, :experience_reduction, :textbook, :note, :url, :comment)
+      params.require(:syllabus).permit(:title, :grade, :term, :day, :faculty, :teacher, :year, :degree, :condition, :lang, :overview, :purpose, :goal, :contents, :outofclass_content, :outofclass_time, :evaluation, :evaluation_note, :feedback, :feedback_note, :activelearning_content, :activelearning_howto, :experience, :experience_contents, :experience_reduction, :textbook, :note, :url, :comment)
     end
 end

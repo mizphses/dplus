@@ -10,20 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_11_031356) do
+ActiveRecord::Schema.define(version: 2021_04_11_150720) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "syllabuses", force: :cascade do |t|
     t.string "title"
-    t.integer "year"
+    t.integer "grade"
     t.integer "term"
     t.string "day"
-    t.integer "time"
     t.string "faculty"
     t.string "teacher"
-    t.integer "grade"
+    t.integer "year"
     t.integer "degree"
     t.string "condition"
     t.string "lang"
@@ -32,7 +31,7 @@ ActiveRecord::Schema.define(version: 2021_04_11_031356) do
     t.string "goal"
     t.string "contents"
     t.string "outofclass_content"
-    t.string "outofclass_tile"
+    t.string "outofclass_time"
     t.string "evaluation"
     t.string "evaluation_note"
     t.string "feedback"
